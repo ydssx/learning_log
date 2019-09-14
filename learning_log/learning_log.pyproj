@@ -4,7 +4,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>learning_log</Name>
     <RootNamespace>learning_log</RootNamespace>
-    <InterpreterId>MSBuild|ll_env|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -66,6 +66,7 @@
     <Folder Include="learning_logs\templates\" />
     <Folder Include="learning_logs\templates\learning_logs\" />
     <Folder Include="learning_log\" />
+    <Folder Include="learning_log\static\" />
     <Folder Include="users\" />
     <Folder Include="users\migrations\" />
     <Folder Include="users\templates\" />
@@ -77,8 +78,11 @@
     <Content Include="learning_logs\templates\learning_logs\new_topic.html" />
     <Content Include="learning_logs\templates\learning_logs\topic.html" />
     <Content Include="learning_logs\templates\learning_logs\topics.html" />
+    <Content Include="learning_log\static\placeholder.txt" />
+    <Content Include="Procfile" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
+    <Content Include="runtime.txt" />
     <Content Include="users\templates\users\login.html" />
     <Content Include="users\templates\users\register.html" />
   </ItemGroup>
@@ -88,10 +92,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Interpreter Include="ll_env\">
-      <Id>ll_env</Id>
+    <Interpreter Include="env\">
+      <Id>env</Id>
       <Version>3.7</Version>
-      <Description>ll_env (Python 3.7 (64-bit))</Description>
+      <Description>env (Python 3.7 (64-bit))</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
