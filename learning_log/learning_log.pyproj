@@ -80,6 +80,7 @@
     <Content Include="learning_logs\templates\learning_logs\topics.html" />
     <Content Include="learning_log\static\placeholder.txt" />
     <Content Include="Procfile" />
+    <Content Include="Procfile.windows" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="runtime.txt" />

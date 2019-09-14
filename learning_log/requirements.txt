@@ -4,3 +4,4 @@ dj-static==0.0.6
 django-bootstrap3==11.1.0
 gunicorn==19.9.0
 static3==0.7.0
+django-heroku
