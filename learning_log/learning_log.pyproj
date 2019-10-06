@@ -5,6 +5,7 @@
     <Name>learning_log</Name>
     <RootNamespace>learning_log</RootNamespace>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <SuppressConfigureTestFrameworkPrompt>true</SuppressConfigureTestFrameworkPrompt>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -74,7 +75,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="learning_logs\templates\learning_logs\base.html" />
+    <Content Include="learning_logs\templates\learning_logs\edict_entry.html" />
     <Content Include="learning_logs\templates\learning_logs\index.html" />
+    <Content Include="learning_logs\templates\learning_logs\new_entry.html" />
     <Content Include="learning_logs\templates\learning_logs\new_topic.html" />
     <Content Include="learning_logs\templates\learning_logs\topic.html" />
     <Content Include="learning_logs\templates\learning_logs\topics.html" />
@@ -96,11 +99,11 @@
     <Interpreter Include="env\">
       <Id>env</Id>
       <Version>3.7</Version>
-      <Description>env (Python 3.7 (64-bit))</Description>
+      <Description>env (Python 3.7 (32-bit))</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
-      <Architecture>X64</Architecture>
+      <Architecture>X86</Architecture>
     </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
